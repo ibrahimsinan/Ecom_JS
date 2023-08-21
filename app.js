@@ -63,5 +63,16 @@ function ekle(e) {
         console.log(parentDiv);
         const littleBox = document.querySelector(".little-box");
         littleBox.innerHTML++;
-    }
+        sepeteEkle(parentDiv);
+    } 
 }
+
+// events within cart modal
+function sepeteEkle(parentDiv) {
+    const li = document.querySelector(".modal-li");
+    const price = parentDiv.children[1].children[1].innerHTML;
+    console.log(price);
+    document.querySelector(".fiyat").innerHTML = price;
+}
+
+1:20

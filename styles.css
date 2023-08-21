@@ -41,3 +41,10 @@
     right: 20px;
     bottom: 20px;
 }
+
+
+/* MODAL */
+.urun-bilgisi {
+    height: 100px;
+    align-items: center;
+}
