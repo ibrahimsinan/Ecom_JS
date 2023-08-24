@@ -134,6 +134,12 @@ function sepeteEkle(parentDiv) {
         if(clickedElement.classList.contains("btn-close")) {
             const productElement = clickedElement.parentElement;
             productElement.remove();
-            littleBox.innerHTML--;
+            // littleBox.innerHTML--;
+
+            const itemCount = parseInt(littleBox.innerHTML);
+
+            if(itemCount > 0) {
+                littleBox.innerHTML = itemCount - 1;
+            }
         }
     })
